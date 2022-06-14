@@ -4,76 +4,186 @@
     box-sizing: border-box;
 }
 
-nav ul{
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(0, 106, 109);
+    height: 60px;
+}
+
+nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
-}
-
-header div img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-}
-
-header div{
-    background-color: rgb(0, 106, 109);
-}
-
-footer{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    background-color: rgb(0, 106, 109);
-    color: white;
+    margin: 15px;
+    min-width: 440px;
 }
 
 ul li{
-    margin: 10px;
+    /* background-color: red; */
+    padding: 5px;
+    border-radius: 4px;
+    transition: 1s;
 }
 
-li a{
+ul li a {
+    font-family: Poppins;
+}
+
+.text {
+    font-family: Poppins;
+}
+
+.text h3 {
+    color: rgb(0, 106, 109);;
+}
+
+main h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    color: rgb(0, 106, 109);
+}
+
+ul li:hover{
+    background-color: white;
+}
+
+li a:hover{
+    color: rgb(0, 106, 109);
+    font-weight: bold;
+}
+
+header div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 60px;
+}
+
+.logo {
+    height: auto;
+}
+
+footer {
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 106, 109);
+    color: white;
+    font-family: Poppins;
+}
+
+.footer__top {
+    display: flex;
+}
+
+.footer__top-left {
+    display: flex;
+    width: 70%;
+}
+
+.footer__top div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact-us {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: end;
+}
+
+.footer__image {
+    padding-right: 70px;
+    padding-top: 5px;
+}
+
+.footer__image div {
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/whatsapp-logo-11.png');
+    background-size: 100%;
+}
+
+.footer__bottom {
+    text-align: center;
+}
+
+li a {
     text-decoration: none;
     color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     margin: 10px;
 }
-.grid img{
+
+.grid div {
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 100px;
+    background-color:rgb(221, 221, 221);
+    border-radius: 20px;
+}
+
+.grid div img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
-h1{
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+.grid div p {
+    font-family: Poppins;
 }
 
-span img{
-    width: 10%;
-    height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+span img {
+    width: 20px;
+    height: 20px;
 }
 
-.nosotros{
+.nosotros {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     margin: 10px;
+    align-items: center;
 }
 
-.nosotros img{
-    width: 40%;
-    height: 100%;
+.foto {
+    margin-right: 20px;
+}
+
+.text {
+    width: 600px;
+    height: 500px;
+    background-color:rgb(221, 221, 221);
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.foto img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 500px;
+    padding: 3px;
+    background-color:rgb(221, 221, 221);
+    border-radius: 20px;
+    
+}
+
+div.logo {
+    flex-shrink: inherit;
 }
