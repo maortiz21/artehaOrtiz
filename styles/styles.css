@@ -78,6 +78,10 @@ footer {
     font-family: Poppins;
 }
 
+h2 {
+    color: rgb(0, 106, 109);
+}
+
 .footer__top {
     display: flex;
 }
@@ -118,7 +122,6 @@ footer {
 li a {
     text-decoration: none;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     transition: 0.5s;
 }
 
@@ -181,9 +184,23 @@ span img {
     padding: 3px;
     background-color:rgb(221, 221, 221);
     border-radius: 20px;
-    
+}
+
+main {
+    font-family: Poppins;
 }
 
 div.logo {
     flex-shrink: inherit;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.parrafo {
+    width: 500px;
 }
