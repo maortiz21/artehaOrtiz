@@ -11,6 +11,10 @@ header{
     height: 60px;
 }
 
+.hamburger {
+    display: none;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -132,7 +136,7 @@ li a {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    grid-column-gap:1rem;
     row-gap: 10px;
     margin: 10px;
 }
@@ -144,6 +148,7 @@ li a {
     padding-bottom: 20px;
     background-color:rgb(221, 221, 221);
     border-radius: 20px;
+    height: auto;
 }
 
 .grid div img {
@@ -173,7 +178,7 @@ span img {
 }
 
 .text {
-    width: 600px;
+    max-width: 600px;
     height: 500px;
     background-color:rgb(221, 221, 221);
     border-radius: 20px;
@@ -183,7 +188,6 @@ span img {
 }
 
 .foto img{
-    display: block;
     width: 500px;
     padding: 3px;
     background-color:rgb(221, 221, 221);
@@ -196,6 +200,43 @@ main {
 
 div.logo {
     flex-shrink: inherit;
+}
+
+@media screen and (max-width: 540px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .foto{
+        margin-right: 0px !important;
+    }
+
+    .contacto {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .parrafo {
+        text-align: center;
+    }
+
+    .foto {
+        width: 500px;
+    }
+
+    .muestra {
+        flex-direction: column;
+    }
+
+    .muestra .image {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-bottom: 20px;
+    }
 }
 
 .contacto {
@@ -227,7 +268,7 @@ div.logo {
     margin: 20px;
     background-color: rgb(221, 221, 221);
     border-radius: 20px;
-    height: 500px;
+    height: auto;
     width: 500px;
 }
 
