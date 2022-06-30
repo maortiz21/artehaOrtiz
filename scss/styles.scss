@@ -5,6 +5,7 @@
 }
 
 $main-color: rgb(0, 106, 109);
+$bg-text-color: rgb(221, 221, 221);
 $main-font: Poppins;
 
 header {
@@ -63,6 +64,19 @@ nav {
     h3 {
         color: $main-color;
     }
+}
+
+.main-text {
+    background-color: $bg-text-color;
+    margin: 10px;
+    border-radius: 20px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.blog {
+    display: grid;
+    overflow: scroll;
 }
 
 main {
@@ -147,7 +161,7 @@ h2 {
         padding-left: 2px;
         padding-right: 2px;
         padding-bottom: 20px;
-        background-color: rgb(221, 221, 221);
+        background-color: $bg-text-color;
         border-radius: 20px;
         height: auto;
 
@@ -183,7 +197,7 @@ span {
     img {
         width: 500px;
         padding: 3px;
-        background-color: rgb(221, 221, 221);
+        background-color: $bg-text-color;
         border-radius: 20px;
     }
 }
@@ -191,7 +205,7 @@ span {
 .text {
     max-width: 600px;
     height: 500px;
-    background-color: rgb(221, 221, 221);
+    background-color: $bg-text-color;
     border-radius: 20px;
     padding: 5px;
     overflow: hidden;
@@ -230,7 +244,7 @@ div {
     .image {
         padding: 10px;
         margin: 20px;
-        background-color: rgb(221, 221, 221);
+        background-color: $bg-text-color;
         border-radius: 20px;
         height: auto;
         width: 500px;
@@ -240,6 +254,12 @@ div {
             height: 100%;
             width: 100%;
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

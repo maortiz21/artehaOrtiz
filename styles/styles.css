@@ -42,6 +42,17 @@ nav ul {
   .text h3 {
     color: #006a6d; }
 
+.main-text {
+  background-color: #dddddd;
+  margin: 10px;
+  border-radius: 20px;
+  height: 200px;
+  overflow: scroll; }
+
+.blog {
+  display: grid;
+  overflow: scroll; }
+
 main {
   font-family: Poppins; }
   main h1 {
@@ -177,6 +188,10 @@ div .logo {
       border-radius: 20px;
       height: 100%;
       width: 100%; }
+
+@media (min-width: 600px) {
+  .blog {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 540px) {
   .grid {
