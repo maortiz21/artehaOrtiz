@@ -19,7 +19,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: map-get($styles, main-color);
-    height: 60px;
+    height: 86px;
 
     div {
         img {
@@ -32,7 +32,7 @@ header {
 }
 
 nav {
-    ul {
+    div ul {
         display: flex;
         flex-direction: row;
         list-style: none;
@@ -62,6 +62,10 @@ nav {
             }
         }
     }
+}
+
+.navbar .show {
+    background-color: map-get($styles, main-color);
 }
 
 .text {
@@ -279,6 +283,7 @@ div {
 
     .nosotros {
         flex-direction: column;
+        gap: 50px;
     }
 
     .foto {
